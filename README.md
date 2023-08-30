@@ -22,31 +22,19 @@ The visual depiction of the two types of data series is shown in Figure 1, with 
 
 ![Figure 1: Positive and Negative Instances](link_to_image)
 
-## Project Steps
+## Model
+To address the challenge of epileptic spike detection, a ResNet model has been employed. The model has been trained on the provided EEG data series to automatically identify the presence of epileptic spikes. The project provides a script train.py that allows you to train the model using various settings.
 
-1. **Data Preprocessing:** Clean, preprocess, and segment the raw EEG data series into fixed-length subsequences, ensuring alignment across channels.
-
-2. **Feature Engineering:** Extract relevant features from each subsequence to capture distinctive patterns in both normal and epileptic spike instances.
-
-3. **Model Selection:** Explore various machine learning and neural network models suitable for imbalanced data classification tasks.
-
-4. **Model Training:** Train and validate the selected models using appropriate techniques such as cross-validation to handle class imbalance effectively.
-
-5. **Performance Evaluation:** Evaluate the models using relevant metrics (e.g., precision, recall, F1-score) to gauge their effectiveness in spike detection.
-
-6. **Hyperparameter Tuning:** Fine-tune the hyperparameters of the chosen models to optimize performance.
-
-7. **Interpatient Variability Handling:** Investigate techniques to handle the variability in spike morphologies across different patients.
-
-8. **Results and Discussion:** Present the achieved results, including model performance and insights into handling challenges posed by class imbalance and interpatient variability.
+Getting Started
+```
+$ git clone https://github.com/thiphan94/EEG-Epileptic-Spike-Detection.git
+$ cd EEG-Epileptic-Spike-Detection
+$ pip install -r requirements.txt
+$ python train.py -M resnet
+```
 
 ## Conclusion
+The EEG Epileptic Spike Detection Project aims to contribute to the accurate detection of epileptic spikes in EEG data series, which is essential for effective diagnosis and treatment of epilepsy. The provided ResNet model serves as a step toward addressing this challenge. By leveraging machine learning techniques, we strive to enhance our understanding of epilepsy and pave the way for more efficient healthcare practices.
 
-Epileptic spike detection in EEG data holds crucial implications for both medical diagnosis and research. By addressing the challenges of class imbalance and interpatient variability, this project aims to contribute to the development of accurate and robust algorithms for automated spike detection. The findings and methodologies employed in this project can potentially enhance our understanding of epileptic activity and pave the way for improved patient care.
-
-For further details, refer to the code implementation and documentation within the repository.
-
-**Note:** The contents of this README are subject to updates as the project progresses.
-
-*[Add image link or reference here]*
+For more details and contributions, please refer to the repository and feel free to explore the code and documentation. Your feedback and suggestions are highly appreciated.
 
